@@ -78,6 +78,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#whats-in-a-name" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -309,6 +314,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Reserve the environment
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -318,6 +334,30 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#whats-in-a-name" class="md-nav__link">
+    What's in a name?
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -495,6 +535,21 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#whats-in-a-name" class="md-nav__link">
+    What's in a name?
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -510,69 +565,20 @@
 
   <h1>Reserve the environment</h1>
 
-<div><p>The steps that follow outline how to reserve access to the pre-provisioned, IBM Technology Zone (ITZ) demonstration environment.</p>
-<div class="admonition tip">
-<p class="admonition-title">Remember, reserve the demonstration environment in IBM Technology Zone</p>
-<p>Reserve an IBM Technology Zone environment ahead of time so that the instance has time to provision.</p>
-</div>
-<ol>
-<li>
-<p>Open a browser to the <a href="https://techzone.ibm.com/collection/ibm-power-virtual-server-level-3" target="_blank">IBM Technology Zone collection for PowerVS L3</a> and click "Complete Learning Activity for IBM Power Virtual Server Level 3 Sales Enablement," as shown.</p>
-<p><img alt="" src="../_attachments/ITZ-1.png"></p>
-</li>
-<li>
-<p>Click the <strong>Demonstration Environment</strong> tile that has the blue <strong>Reserve</strong> icon request for a reservation.</p>
-<p><img alt="" src="../_attachments/ITZ-2.png"></p>
-</li>
-<li>
-<p>Select <strong>Reserve Now</strong>.</p>
-<p><img alt="" src="../_attachments/ITZ-3.png"></p>
-</li>
-<li>
-<p>Complete the required fields for the reservation.</p>
-<p>a. Provide the instance a unique name. For example, 'AndrewJ-PowerVS-L3'.</p>
-<p>b. Set the value of <strong>Purpose</strong> to <strong>Education</strong>.</p>
-<p>c. Write a brief note into the <strong>Purpose Description</strong> field.</p>
-<p>d. Under the <strong>Preferred Geography</strong> field, select <strong>itzadhoc03 - AMERICAS - us-south region - dal13 datacenter</strong> (or a closer location if available).</p>
-<p>e. Specify the <strong>End Date and Time</strong> for the reservation. The default reservation is for two days. You can extend the reservation for up to an extra four days.</p>
-<p><img alt="" src="../_attachments/ReservationInputs.png"></p>
-</li>
-<li>
-<p>When satisfied, scroll down and (a) accept the terms and conditions and then (b) click <strong>Submit</strong> to initiate the environment provisioning request.</p>
-<p><img alt="" src="../_attachments/ReservationSubmit2.png"></p>
-</li>
-<li>
-<p>Wait for IBM Technology Zone to finish provisioning the PowerVS environment. The automation takes approximately 5 to 10 minutes. When ready, an email is sent <em>and</em> the <a href="https://techzone.ibm.com/my/reservations" target="_blank">Reservations</a> page shows a PowerVS tile with the status of <strong>Ready</strong>. If marked as ready, click anywhere on the tile to drill down into details of the reservation.</p>
-<p><img alt="" src="../_attachments/ITZ-3a.png"></p>
+<div><h2 id="whats-in-a-name">What's in a name?</h2>
+<p>I call them <strong>callouts</strong>, MkDocs all them <strong>admonitions</strong>. </p>
+<p>Either way, they are ways to to draw attention to some content. Unfortunately, I have not been real consistent in my use of these across the IBM Cloud L3s, and we don't have a "standard". I think this is something we will try to address in future as we work across other teams doing similar L3s with markdown.</p>
 <div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>Clicking the PowerVS tile before it is marked as Ready (for example, if it shows as "scheduled" or "provisioning") displays incomplete data. Wait until the environment is <strong>Ready</strong> before you continue to the next step.</p>
+<p class="admonition-title">Read this before continuing!</p>
+<p>Did it work? Sometimes it seems strange as the font may be smaller, but it does make the text more pronounced. The problem is many users still won't read it, but hey we gotta try.</p>
 </div>
-</li>
-<li>
-<p>Click the reservation tile.</p>
-<p><img alt="" src="../_attachments/ITZ-4.png"></p>
-</li>
-<li>
-<p>Locate the <strong>User ID</strong> field and record this value. It is needed later. It looks like your email address that was used to request the environment but with a period instead of an <em>at</em> sign (@).</p>
-<p><img alt="" src="../_attachments/ReservationUserID.png"></p>
-</li>
-<li>
-<p>Click <strong>Download SSH Private Key</strong>.</p>
-<p>This SSH key is used later to access the PowerVS virtual server instances.</p>
-<div class="admonition tip">
-<p class="admonition-title">Record the file name and location!</p>
-<p>The private key file is used later when accessing virtual machines on PowerVS.</p>
-</div>
-<p><img alt="" src="../_attachments/ReservationSSHkey.png"></p>
-</li>
-<li>
-<p>Review the emails received. One is from <strong>IBM Cloud</strong> with the title <strong>Account: You are invited to join an account in IBM Cloud</strong>. In the body of the email is a <strong>Join Now</strong> link. Click the link and <strong>Accept</strong> the invitation on the IBM Cloud portal.</p>
-<p>If you do not receive an e-mail, try deleting the existing reservation in ITZ and try creating a new one. If that doesn't work, open a support ticket in the #itz-techzone-support Slack channel.  Include the reservation ID and summarize the problem in your message.</p>
-<p><img alt="" src="../_attachments/ReservationEmail.png"></p>
-</li>
-</ol>
-<p>Now that you have an active ITZ reservation, you can proceed. Remember, the default duration of the reservation is 2 days. You can extend the reservation for up to an extra four days. IBMers will need an active reservation to record their stand and deliver, and business partners will want it to complete the short quiz as part of the Level 3 learning plan.</p></div>
+<p>You can also make it where only the "headline" shows and the user has to expand to see the body, like this:</p>
+<details class="important">
+<summary>Read this before continuing!</summary>
+<p>Did it work? Sometimes it seems strange as the font may be smaller, but it does make the text more pronounced. The problem is many users still won't read it, but hey we gotta try.</p>
+</details>
+<p>There are other icons instead of what shows for "Important" ones. I often use "Note", "Info", and "Warning". You can find more in the MkDocs documentation <a href="https://squidfunk.github.io/mkdocs-material/reference/admonitions/" target="_blank">here</a>.</p>
+<p>Links were mentioned in the previous chapter. You an also create links to internal pages like this: Go to <a href="../../Part%202/01%20Introduction/">Part 2 - 01 Introduction</a>.</p></div>
 
 
 
