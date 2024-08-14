@@ -610,7 +610,19 @@
 <p>You can also have videos:</p>
 <p><div class="video-container"><iframe src="../_videos/GitHubInstallExtension-final.mp4" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p>
 <p>You can make things <strong>bold</strong> and you can make things <em>italic</em> and guess what, <strong><em>bold and italic</em></strong>.</p>
-<p>Bullets are done like this</p>
+<p>Numbered lists are good for step by step stuff.</p>
+<ol>
+<li>
+<li>
+</ol>
+<div class="admonition bug">
+<p class="admonition-title">Bug or as works as intended?</p>
+<p>Note, if you don't put a space after the period in you numbered lists, mkdocs treats it differently and
+the numbers appear on the same line like this:
+1.
+2.</p>
+</div>
+<p>Bullets are done like this.</p>
 <ul>
 <li>bullet 1 </li>
 <li>bullet 2 <ul>
@@ -619,17 +631,13 @@
 </ul>
 </li>
 </ul>
-<p>Numbered lists are good for step by step stuff.</p>
-<ol>
-<li>
-<li>
-</ol>
 <div class="admonition bug">
-<p class="admonition-title">Bug or as intended, not sure</p>
-<p>Note, if you don't put a space after the period in you numbered lists, mkdocs treats it differently and
-the numbers appear on the same line like this:
-1.
-2.</p>
+<p class="admonition-title">Bug or as works as intended? Either way 4 is the magic number.</p>
+<p>For sub bullets and other areas where you want things indented, you need to use <strong>4</strong> spaces for those items. In the bullet example above, the sub bullets must have 4 spaces before the <strong>-</strong>. </p>
+<p>Likewise in the list and image example below, the image definition and paragraph need to be preceded by <strong>4</strong> spaces.</p>
+<p>And the Python-Markdown documentation notes:</p>
+<p>The syntax rules clearly state that when a list item consists of multiple paragraphs, “each subsequent paragraph in a list item must be indented by either 4 spaces or one tab” (emphasis added). <em>However, many implementations do not enforce this rule and allow less than 4 spaces of indentation.</em> The implementers of Python-Markdown consider it a bug to not enforce this rule.</p>
+<p>The preview extensions that we added in VSC don't enforce the 4 rule, so sometimes what you see there is not what you get when you publish to GitHub pages. Thus, it is important to review the <strong>published</strong> content and not just the source.</p>
 </div>
 <p>Recall from Center of Excellence style guides, images associated with a numbered item should be indented like the one below.</p>
 <ol>
