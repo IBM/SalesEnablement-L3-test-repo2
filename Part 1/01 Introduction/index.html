@@ -667,9 +667,7 @@
 
 <div><h1 id="some-different-markdown-techniques">Some different markdown techniques</h1>
 <h2 id="referencing-variables-from-mkdocsyml">Referencing variables from mkdocs.yml</h2>
-<p>Here is how to reference one of the <strong>extra</strong> variables from the <strong>mkdocs.yml</strong> files. The offering.name variable is: IBM Power Virtual Server. The syntax in markdown looks like:</p>
-<div class="highlight"><pre><span></span><code>\{\{offering.name\}\}
-</code></pre></div>
+<p>Here is how to reference one of the <strong>extra</strong> variables from the <strong>mkdocs.yml</strong> files. The offering.name variable is: IBM Power Virtual Server. The syntax in markdown looks like: <code>IBM Power Virtual Server</code>.</p>
 <h2 id="links">Links</h2>
 <h3 id="extern-links">Extern links</h3>
 <p>Links to external references are created using the Hyper Text Markup Language (HTML) <strong>href</strong> syntax. Use the <em>target="_blank"</em> attribute to open the link in new browser tabs or windows so users don't loose their place in the L3 demonstration guide!</p>
@@ -680,7 +678,7 @@
 <h3 id="internal-links-references">Internal links (references)</h3>
 <p>Internal links to pages contained in the repository use relative paths. </p>
 <p>To link to the next chapter in this section, create a link like <a href="../02%20Callouts/">this</a>. The markdown looks like this <code>[this](02 CAllouts.md)</code>. </p>
-<p>To link to a document in a different directory like [this]I(../Part 2/02 Introduction.md). The markdown looks like this: <code>[this](..Part 2/02 Introduction.md)</code>.</p>
+<p>To link to a document in a different directory like <a href="../Part%202/02%20Introduction.md">this</a>. The markdown looks like this: <code>[this](../Part 2/02 Introduction.md)</code>.</p>
 <h2 id="images-and-videos">Images and videos</h2>
 <p>Images can be included:</p>
 <p><img alt="" src="../_attachments/ITZ-1.png"></p>
