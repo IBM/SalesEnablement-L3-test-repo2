@@ -13,10 +13,10 @@
       
       
       
-        <link rel="prev" href="../01%20Introduction/">
+        <link rel="prev" href="../../Part%201/02%20Callouts/">
       
       
-        <link rel="next" href="../../Part%203/01%20Next%20steps/">
+        <link rel="next" href="../02%20Code%20blocks/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>More stuff - IBM Cloud Sample Level 3</title>
+        <title>Tables - IBM Cloud Sample Level 3</title>
       
     
     
@@ -78,11 +78,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#other-common-formatting-techniques" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -115,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              More stuff
+              Tables
             
           </span>
         </div>
@@ -285,11 +280,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Part%201/01%20Introduction/" class="md-nav__link">
+      <a href="../../Part 1/01 Markdown Basics.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Introduction
+    Markdown basics
   </span>
   
 
@@ -309,7 +304,7 @@
         
   
   <span class="md-ellipsis">
-    Reserve the environment
+    Callouts
   </span>
   
 
@@ -368,26 +363,6 @@
                 
   
   
-  
-    <li class="md-nav__item">
-      <a href="../01%20Introduction/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Introduction
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -397,64 +372,36 @@
       
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    More stuff
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    More stuff
+    Tables
   </span>
   
 
       </a>
       
-        
+    </li>
+  
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+              
+            
+              
+                
   
   
   
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#other-common-formatting-techniques" class="md-nav__link">
-    Other common formatting techniques
-  </a>
-  
-    <nav class="md-nav" aria-label="Other common formatting techniques">
-      <ul class="md-nav__list">
+    <li class="md-nav__item">
+      <a href="../02%20Code%20blocks/" class="md-nav__link">
         
-          <li class="md-nav__item">
-  <a href="#code-blocks" class="md-nav__link">
+  
+  <span class="md-ellipsis">
     Code blocks
-  </a>
+  </span>
   
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
+
+      </a>
     </li>
   
 
@@ -548,34 +495,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#other-common-formatting-techniques" class="md-nav__link">
-    Other common formatting techniques
-  </a>
-  
-    <nav class="md-nav" aria-label="Other common formatting techniques">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#code-blocks" class="md-nav__link">
-    Code blocks
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -589,35 +508,39 @@
                   
 
 
-  <h1>More stuff</h1>
+  <h1>Tables</h1>
 
-<div><h2 id="other-common-formatting-techniques">Other common formatting techniques</h2>
-<p>Code blocks should be used when specifying text that the user should enter or copy and paste. </p>
-<div class="admonition danger">
-<p class="admonition-title">Potential conflict with current Sales Enablement Center of Excellence (COE)</p>
-<p>The COE alls for using the IBM Plex Mono Light font. While it may be possible to load fonts on the backend web server as part of the generated HTML code, that is not done today. The default font used by the material theme does use a monotype font for code blocks.</p>
-</div>
-<h3 id="code-blocks">Code blocks</h3>
-<p>Code blocks are nice since the draw attention to text that the user may need to type somewhere in some user interface you are talking about. Notice the copy icon at far left. This is really nice, especially when what the user needs to copy and paste is complex. </p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ls -l
+<div><p>There are a lot of other things you can do using MkDocs. </p>
+<p>Like, create tables. </p>
+<table>
+<thead>
+<tr>
+<th>First Header</th>
+<th>Second Header</th>
+<th>Third Header</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Content Cell</td>
+<td>Content Cell</td>
+<td>Content Cell</td>
+</tr>
+<tr>
+<td>Content Cell</td>
+<td>Content Cell</td>
+<td>Content Cell</td>
+</tr>
+</tbody>
+</table>
+<p>They look ok, but the way you do it in markdown is kind of ugly: </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>First Header | Second Header | Third Header
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>------------ | ------------- | ------------
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Content Cell | Content Cell  | Content Cell
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>Content Cell | Content Cell  | Content Cell
 </code></pre></div>
-<p>It also supports language specific highlighting:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">def</span> <span class="nf">fn</span><span class="p">():</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="k">pass</span>
-</code></pre></div>
-<p>The documentation says "Note that fenced code blocks can not be indented. Therefore, they cannot be nested inside list items, blockquotes, etc.", but we can try</p>
-<div class="highlight"><pre><span></span><code>```
-this code is indented
-```
-</code></pre></div>
-<p>Did it work? Nope. However, it does work when it is in a numbered list so this helps us meet our style guidelines.</p>
-<ol>
-<li>one</li>
-<li>two
-    <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>trying again
-</code></pre></div></li>
-<li>three </li>
-</ol></div>
+<p>To learn about tables go <a href="https://www.mkdocs.org/user-guide/writing-your-docs/#tables" target="_blank">here</a> in the MkDocs documentation.</p>
+<p>Note, sometimes it is confusing if you should go to the MkDocs documentation or the docs for the theme you are using (in our case the <strong>material</strong> theme). I don't have a good rule, so you should bookmark both!</p></div>
 
 
 
