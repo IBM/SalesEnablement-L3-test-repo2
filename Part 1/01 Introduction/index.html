@@ -79,7 +79,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#test-repository" class="md-skip">
+        <a href="#some-different-markdown-techniques" class="md-skip">
           Skip to content
         </a>
       
@@ -333,22 +333,57 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#heading" class="md-nav__link">
-    heading
+  <a href="#referencing-variables-from-mkdocsyml" class="md-nav__link">
+    Referencing variables from mkdocs.yml
   </a>
   
-    <nav class="md-nav" aria-label="heading">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#links" class="md-nav__link">
+    Links
+  </a>
+  
+    <nav class="md-nav" aria-label="Links">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#smaller-heading-with-no-line" class="md-nav__link">
-    smaller heading with no line
+  <a href="#extern-links" class="md-nav__link">
+    Extern links
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#internal-links-references" class="md-nav__link">
+    Internal links (references)
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#images-and-videos" class="md-nav__link">
+    Images and videos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formatting-text" class="md-nav__link">
+    Formatting text
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#numbered-lists-and-bullets" class="md-nav__link">
+    Numbered lists and bullets
+  </a>
   
 </li>
       
@@ -561,22 +596,57 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#heading" class="md-nav__link">
-    heading
+  <a href="#referencing-variables-from-mkdocsyml" class="md-nav__link">
+    Referencing variables from mkdocs.yml
   </a>
   
-    <nav class="md-nav" aria-label="heading">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#links" class="md-nav__link">
+    Links
+  </a>
+  
+    <nav class="md-nav" aria-label="Links">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#smaller-heading-with-no-line" class="md-nav__link">
-    smaller heading with no line
+  <a href="#extern-links" class="md-nav__link">
+    Extern links
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#internal-links-references" class="md-nav__link">
+    Internal links (references)
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#images-and-videos" class="md-nav__link">
+    Images and videos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formatting-text" class="md-nav__link">
+    Formatting text
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#numbered-lists-and-bullets" class="md-nav__link">
+    Numbered lists and bullets
+  </a>
   
 </li>
       
@@ -595,24 +665,32 @@
                   
 
 
-<div><h1 id="test-repository">Test Repository</h1>
-<h2 id="heading">heading</h2>
-<h3 id="smaller-heading-with-no-line">smaller heading with no line</h3>
+<div><h1 id="some-different-markdown-techniques">Some different markdown techniques</h1>
+<h2 id="referencing-variables-from-mkdocsyml">Referencing variables from mkdocs.yml</h2>
 <p>Here is how to reference one of the <strong>extra</strong> variables from the <strong>mkdocs.yml</strong> files. The offering.name variable is: IBM Power Virtual Server. The syntax in markdown looks like:</p>
 <div class="highlight"><pre><span></span><code>\{\{offering.name\}\}
 </code></pre></div>
-<p>Links to other documents are done like below. You use the html href syntax to do this. Use the <em>target="_blank"</em> attribute to make sure all links open in new browser tabs or windows so users don't loose their place in the L3 demonstration guide!</p>
+<h2 id="links">Links</h2>
+<h3 id="extern-links">Extern links</h3>
+<p>Links to external references are created using the Hyper Text Markup Language (HTML) <strong>href</strong> syntax. Use the <em>target="_blank"</em> attribute to open the link in new browser tabs or windows so users don't loose their place in the L3 demonstration guide!</p>
 <ul>
 <li><strong>IBM:</strong> <a href="https://yourlearning.ibm.com/activity/PLAN-4E64FE2FDBF0" target="_blank">IBM Power Virtual Server Sales Foundation</a></li>
 <li><strong>Business Partners:</strong> <a href="https://learn.ibm.com/course/view.php?id=11419" target="_blank">IBM Power Systems Virtual Server Sales Foundation</a></li>
 </ul>
+<h3 id="internal-links-references">Internal links (references)</h3>
+<p>Internal links to pages contained in the repository use relative paths. </p>
+<p>To link to the next chapter in this section, create a link like <a href="../02%20Callouts/">this</a>. The markdown looks like this <code>[this](02 CAllouts.md)</code>. </p>
+<p>To link to a document in a different directory like [this]I(../Part 2/02 Introduction.md). The markdown looks like this: <code>[this](..Part 2/02 Introduction.md)</code>.</p>
+<h2 id="images-and-videos">Images and videos</h2>
 <p>Images can be included:</p>
 <p><img alt="" src="../_attachments/ITZ-1.png"></p>
 <p>You should use a border around images to make sure the are visually separated from other content. I use SnagIt!, how about you?</p>
 <p>You can also have videos:</p>
 <p><div class="video-container"><iframe src="../_videos/GitHubInstallExtension-final.mp4" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p>
+<h2 id="formatting-text">Formatting text</h2>
 <p>You can make things <strong>bold</strong> and you can make things <em>italic</em> and guess what, <strong><em>bold and italic</em></strong>.</p>
-<p>Numbered lists are good for step by step stuff.</p>
+<h2 id="numbered-lists-and-bullets">Numbered lists and bullets</h2>
+<p>Numbered lists are good for step by step instructions.</p>
 <ol>
 <li>
 <li>
