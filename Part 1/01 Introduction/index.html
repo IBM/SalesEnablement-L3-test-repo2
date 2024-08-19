@@ -598,7 +598,9 @@
 <div><h1 id="test-repository">Test Repository</h1>
 <h2 id="heading">heading</h2>
 <h3 id="smaller-heading-with-no-line">smaller heading with no line</h3>
-<p>Here is how to reference one of the <strong>extra</strong> variables from the <strong>mkdocs.yml</strong> files. The offering.name variable is: IBM Power Virtual Server.</p>
+<p>Here is how to reference one of the <strong>extra</strong> variables from the <strong>mkdocs.yml</strong> files. The offering.name variable is: IBM Power Virtual Server. The syntax in markdown looks like:</p>
+<div class="highlight"><pre><span></span><code>\{\{offering.name\}\}
+</code></pre></div>
 <p>Links to other documents are done like below. You use the html href syntax to do this. Use the <em>target="_blank"</em> attribute to make sure all links open in new browser tabs or windows so users don't loose their place in the L3 demonstration guide!</p>
 <ul>
 <li><strong>IBM:</strong> <a href="https://yourlearning.ibm.com/activity/PLAN-4E64FE2FDBF0" target="_blank">IBM Power Virtual Server Sales Foundation</a></li>
@@ -646,7 +648,11 @@ the numbers appear on the same line like this:
 <p>Notice how my images lines up with this line of text and the numbered item above. You need to use <strong>4</strong> spaces before the image definition to make things line up properly.</p>
 <p><img alt="" src="../_attachments/part1_step1.png"></p>
 </li>
-</ol></div>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Automatic numbering in Visual Studio Code (VSC)</p>
+<p>When editing a number item, double check that the numbered item does not change. Depending on the changes made, it has been observed the VSC will reset the numbered item to 1. Always double check that numbered lists are correct when saving the updated document.</p>
+</div></div>
 
 
 
